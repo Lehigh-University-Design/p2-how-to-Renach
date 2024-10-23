@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Revamping</title>
+        <subhead>Overall Process</subhead>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fcf7f7;
+        }
+        header {
+            background-color: #4f89cf;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            padding: 0 10px;
+        }
+        .column {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 20px;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .column h2 {
+            color: #2faa2f;
+        }
+        .column p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            color: hsl(0, 0%, 0%);
+        }
+        </style>
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto
+  }
+
+  /* Masthead */
+  masthead {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin-bottom: 1em;
+  }
+
+  masthead h1 {
+    margin-right: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+  }
+
+  masthead img {
+    display: inline-block;
+    align-self: center;
+    width: auto;
+    height: 2.5em;
+    margin-right: .5em;
+  }
+
+  masthead ul {
+    padding-inline-start: 0;
+  }
+
+  masthead li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  masthead a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: all 0.3s ease 0s;
+  }
+
+  masthead a:hover {
+    color: coral;
+  }
+
+  /* main */
+
+  #content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2em;
+    margin-bottom: 1em;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2em;
+  }
+
+  h2 {
+    color: var(--light-color);
+  }
+
+  .sidebar-post {
+    margin-bottom: 1em;
+    .post-stuff {
+      display: flex;
+      align-items: flex-start;
+    }
+    p {
+      margin-top: 0;
+    }
+    img {
+      width: 33%;
+      height: auto;
+      display: block;
+      margin-right: 1em;
+    }
+  }
+
+  .big-post {
+    border:1px solid var(--dark-color);
+    margin-bottom: 1em;
+    .img-container {
+      aspect-ratio: 4/3;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+  }
+
+  .post:last-child, .big-post:last-child {
+    margin-bottom: 0;
+  }
+
+  /* media queries */
+  @media only screen and (max-width: 768px) {
+
+    body {
+      font-size: 16px;
+    }
+
+    masthead {
+      text-align: center;
+      flex-flow: column nowrap;
+    }
+    masthead ul {
+      margin-bottom: 0;
+    }
+    masthead h1 {
+      margin-right: 0;
+    }
+    masthead img {
+      margin-right: 0;
+    }
+
+    #content {
+      padding: 1em;
+      gap: 1em;
+      grid-template-columns: 1fr;
+    }
+    .main {
+      order: 1;
+    }
+    .sidebar {
+      order: 2;
+    }
+
+  }
+
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Social Media Revamping</h1>
+    </header>
+    <subhead>'Overall Process</subhead>
+
+    <div class="container">
+        <div class="column">
+            <h2>Step One: Cleaning house</h2>
+            <p>The first step is deciding if you will be keeping anything from the old feed or throwing everything out.</p>
+        </div>
+        <div class="column">
+            <h2>Step Two: Find Inspiration </h2>
+            <p> The next step is checking out profiles that fit the aesthetic and overall feel that you wish to emulate on your account.  when you find them write what sticks out to you and how you could create something similar in realm but not the same.
+
+            </p>
+        </div>
+        <div class="column">
+            <h2> Step Three: Create and implement </h2>
+            <p>For this step you will need to assemble the content you ultimately wish to put out and practice putting it on test grids to see how the layout will look. </p>
+        </div>
+        <div class="column">
+            <h2>Column 4</h2>
+            <p>Analytics and performance tracking tips.</p>
+        </div>
+    </div>
+    <div id="content">
+        <div class="sidebar">
+
+            <div class="sidebar-post">
+                <h2>The Title of My Article</h2>
+                <div class="post-stuff">
+                <img src="https://placehold.co/400x400">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum explicabo odit esse amet sunt soluta, iure quis animi atque earum qui, impedit laboriosam consectetur voluptatem?</p>
+                </div>
+            </div>
+
+            <div class="sidebar-post">
+                <h2>The Title of My Article</h2>
+                <div class="post-stuff">
+                <img src="https://placehold.co/400x400">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum explicabo odit esse amet sunt soluta, iure quis animi atque earum qui, impedit laboriosam consectetur voluptatem?</p>
+                </div>
+            </div>
+            <div class="main">
+
+                <div class="big-post">
+                    <h2>The Title of My Big Article</h2>
+                    <div class="post-stuff">
+                    <img src="https://placehold.co/400x300">
+                    <p>The CSS Media Query gives you a way to apply CSS only when the browser and device environment matches a rule that you specify, for example "viewport is wider than 480 pixels".</p>
+                    <p>
+                        Media Queries can be used to target certain viewport sizes, or even media types, like when you want a print stylesheet. Read more <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries" target="_blank">here</a>.
+                    </p>
+                    </div>
+
+    <footer>
+        <p>&copy; 2024 Social Media Revamping Project. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('title').addEventListener('click', function() {
+            window.location.href = 'https://www.yourwebsite.com'; // Replace with your actual website URL
+        });
+    </script>
+
+</body>
+</html>
